@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-width: 500px;
+    margin-bottom: 10px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+textarea.form-control {
+    height: 300px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
