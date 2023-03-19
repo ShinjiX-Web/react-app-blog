@@ -6,7 +6,6 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Posts from './Posts';
 import Create from './Create';
-import PostView from './PostView';
 
 function App()
 {
@@ -41,7 +40,6 @@ function App()
               <Route path="/" element={<Home />} />
               <Route path="/posts" element={<Posts posts={posts} deletePost={deletePost} />} />
               <Route path="/create" element={<Create addPost={addPost} />} />
-              <Route path="/view/:id" component={PostView} /> {/* add the new route */}
             </Routes>
           </div>
         </div>

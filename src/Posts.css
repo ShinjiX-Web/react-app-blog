@@ -50,3 +50,9 @@ p {
 .titles {
     margin-bottom: 10px;
 }
+
+.secondary-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

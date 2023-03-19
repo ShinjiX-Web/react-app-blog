@@ -1,16 +1,25 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Posts.css';
+import React, { useState } from 'react';
+import Confetti from 'react-confetti';
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
 
 function Posts(props)
 {
+    const [showConfetti, setShowConfetti] = useState(false);
     const { posts, deletePost } = props;
 
     function handleDelete(index)
     {
         deletePost(index);
+    }
+
+    function handleSave()
+    {
+        // do something when the "Save" button is clicked
+        setShowConfetti(true);
     }
 
     return (
@@ -45,11 +54,17 @@ function Posts(props)
                     </ListGroup>
                 </Col>
             </Row>
-            <Button>
-                <Link to="/create" className="text-start" id="create">
-                    Create Post
-                </Link>
-            </Button>
+            <Container className='secondary-container'>
+                <Button onClick={() => { handleSave(); setShowConfetti(true); }}>
+                    Show Party
+                </Button>
+                <Confetti numberOfPieces={200} run={showConfetti} />
+                <Button>
+                    <Link to="/create" className="text-start" id="create">
+                        Create Post
+                    </Link>
+                </Button>
+            </Container>
         </Container>
     );
 }

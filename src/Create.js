@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
 import './Create.css'
+import Confetti from 'react-confetti';
 import { useNavigate } from 'react-router-dom';
+
 
 function Create(props)
 {
+    const [showConfetti, setShowConfetti] = useState(false);
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const navigate = useNavigate();
+
+    function handleSave()
+    {
+        // do something when the "Save" button is clicked
+        setShowConfetti(true);
+    }
+
 
     function handleSubmit(event)
     {
@@ -59,9 +69,10 @@ function Create(props)
                             onKeyDown={handleKeyDown}
                             required />
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary" onClick={() => { handleSave(); setShowConfetti(true); }}>
                         Save
                     </button>
+                    <Confetti numberOfPieces={200} run={showConfetti} />
                 </form>
             </div>
         </div>
