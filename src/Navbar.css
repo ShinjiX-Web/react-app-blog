@@ -1,0 +1,25 @@
+.nav-link {
+    color: aliceblue;
+}
+
+#mySearch {
+    caret-color: black;
+    margin-left: 10px;
+}
+
+#mySearch:focus {
+    outline: none;
+    border: none;
+}
+
+.search-btn {
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 5px 10px;
+    height: fit-content;
+}
+
+.search-btn:hover {
+    background-color: aliceblue;
+    color: #EA5A04;
+}
