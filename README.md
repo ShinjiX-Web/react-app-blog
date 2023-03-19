@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# React Blog App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img src="https://github.com/ShinjiX-Web/react-app-blog/blob/main/public/Blog%20App.PNG">
 
 ## Available Scripts
 
