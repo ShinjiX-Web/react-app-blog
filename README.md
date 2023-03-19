@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img src="https://github.com/ShinjiX-Web/react-app-blog/blob/main/public/Blog%20App.PNG">
+<img src="https://github.com/ShinjiX-Web/react-app-blog/blob/main/src/Kodego.png">
 
 ## Available Scripts
 
